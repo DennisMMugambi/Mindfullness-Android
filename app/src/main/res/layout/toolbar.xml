@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:navigationContentDescription="@string/abc_action_bar_up_description"
+    app:titleTextColor="@android:color/black"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/appGray"
+    app:title="@string/app_name"
+    app:layout_collapseMode="pin"
+    android:minHeight="@dimen/abc_action_bar_default_height_material" >
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <ImageView
+            android:layout_width="@dimen/_31dp"
+            android:layout_height="@dimen/_31dp"
+            android:src="@drawable/splashlogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard_title"
+            android:textColor="@color/dashTitle"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_marginStart="@dimen/_30dp"
+            android:textSize="@dimen/_16sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--below line is to create preference category-->
+    <PreferenceCategory android:title="@string/Settings">
+
+
+
+
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/PushNotifications"
+            android:summary="@string/On"
+            android:title="@string/PushNotifications" />
+
+        <!--below switch preference is
+            use for mobile data usage-->
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/EmailNotifications"
+            android:summary="@string/On"
+            android:title="@string/EmailNotifications" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/SMSNotifications"
+            android:summary="@string/On"
+            android:title="@string/SMSNotifications" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,3 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Mindfullness App</string>
+
+    <string name="title_onboarding">Onboarding</string>
+    <string name="sample_title">sample title</string>
+    <string name="intro_screen_description">intro screen description</string>
+    <string name="skip">skip</string>
+    <string name="onboarding_title_1">Giving</string>
+    <string name="onboarding_title_2">Show Reports</string>
+    <string name="onboarding_title_3">Asset Managment</string>
+    <string name="onboarding_title_4">Conference</string>
+    <string name="onboarding_description">Nulla pellentesque tellus et lacus tincidunt, a et auctor quam tincidunt. Praesent aliquet church</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_deliverance">Welcome to Deliverance church International</string>
+    <string name="welcome_insruction">Please click on ”Continue button” to get Started with your account and enjoy our services</string>
+    <string name="get_started">Get started</string>
+
+    <string name="account_lookup">Account lookup</string>
+    <string name="account_lookup_description"><![CDATA[Please provide your Full name & ID Number so that we can fetch your account details.]]></string>
+    <string name="agree">I agree to the</string>
+    <string name="terms_conditions"><u><![CDATA[Terms & Conditions]]></u></string>
+    <string name="fetch">Fetch</string>
+    <string name="error_fetching_questions">There was an error fetching the security questions</string>
+    <string name="answer_invalid">Kindly fill out this field in order to proceed</string>
+    <string name="error_setting_questions">The was an error setting your question answers kindly contact support</string>
+    <string name="session_will_expire_in">"This session will expire in : "</string>
+    <string name="church1">First Church</string>
+    <string name="skip_btn"><u>Skip</u></string>
+    <string name="screen_1_description">Say Hi to your therapist friend. Consult with the best therapist and psychiatrists over audio and video call anytime anywhere</string>
+    <string name="onboarding_title_one">It\'s okay to ask for help.</string>
+    <string name="screen_2_description">It\'s okay if you have a bad day, some are less than perfect. Talk to your AI friend for some good advice and help</string>
+    <string name="onboarding_title_two">Need someone to talk to?</string>
+    <string name="screen_3_description">Feeling anxious, stressed, tired, sad or bad memories and don;t know what to do? Here we are, get personalised meditation sessions for your problems.</string>
+    <string name="onboarding_title_three">Mental health Matters!</string>
 </resources>

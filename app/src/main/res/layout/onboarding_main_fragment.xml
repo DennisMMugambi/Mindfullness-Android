@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.main.onboarding.OnboardingFragment"
+    android:id="@+id/main">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/skip_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/skip_btn"
+                android:theme="@style/SkipBtn"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/_50dp"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_marginEnd="@dimen/_30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/skip_btn"
+                app:layout_constraintHeight_percent="0.37"
+                />
+
+            <TextView
+                android:id="@+id/tv_slider_title"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_23dp"
+                android:layout_below="@+id/pager"
+                android:layout_marginTop="@dimen/_24dp"
+                android:theme="@style/onboarding_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pager"
+                android:textAlignment="center"
+                tools:text="@string/sample_title"/>
+
+            <TextView
+                android:id="@+id/tv_slider_descr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_92dp"
+                android:maxLines="4"
+                android:minLines="2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_slider_title"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_marginEnd="@dimen/_30dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_50dp"
+                android:theme="@style/onboarding_desription"
+                android:layout_gravity="center_horizontal"
+                tools:text="@string/intro_screen_description"
+                android:textAlignment="center"
+                />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabDots"
+                android:layout_width="@dimen/_70dp"
+                android:layout_height="@dimen/_30dp"
+                android:backgroundTintMode="screen"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
+                app:layout_constraintTop_toBottomOf="@+id/tv_slider_descr"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGetStarted"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_38dp"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_marginEnd="@dimen/_14dp"
+                android:layout_marginStart="@dimen/_14dp"
+                android:layout_marginBottom="@dimen/_40dp"
+                android:background="@drawable/btn_blue"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sp"
+                android:theme="@style/Button2Theme"
+                android:bottomRightRadius="5dp"
+                android:bottomLeftRadius="5dp"
+                android:topLeftRadius="5dp"
+                android:topRightRadius="5dp"
+                app:backgroundTint="@color/appBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
+                android:indeterminateTint="@android:color/white"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/btnGetStarted"
+                app:layout_constraintEnd_toEndOf="@+id/btnGetStarted"
+                app:layout_constraintTop_toTopOf="@+id/btnGetStarted"
+                app:layout_constraintBottom_toBottomOf="@+id/btnGetStarted"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
