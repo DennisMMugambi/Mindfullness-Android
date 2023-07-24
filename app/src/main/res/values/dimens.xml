@@ -70,4 +70,5 @@
     <dimen name="_25dp">25dp</dimen>
     <dimen name="_9dp">9dp</dimen>
     <dimen name="_157dp">157dp</dimen>
+    <dimen name="_130dp">130dp</dimen>
 </resources>

@@ -1,11 +1,6 @@
 package com.ekenya.rnd.android.common.Utils
 
 import android.content.Context
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
-import okhttp3.RequestBody.Companion.asRequestBody
-import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.File
 
 object Utils {
@@ -47,16 +42,5 @@ object Utils {
         editor.clear()
         editor.apply()
     }
-
-    fun createMultipartRequestBody(file: File?, name: String, mediaType: String): MultipartBody.Part? {
-        val requestFile = file?.asRequestBody(mediaType.toMediaTypeOrNull())
-        if (file != null) {
-            return requestFile?.let { MultipartBody.Part.createFormData(name, file.name, it) }
-        }
-        return null
-    }
-
-    fun createRequestBody(value: Any): RequestBody = value.toString().toRequestBody("text/plain".toMediaTypeOrNull())
-
 
 }

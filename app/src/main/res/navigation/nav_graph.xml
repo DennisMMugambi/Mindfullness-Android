@@ -7,22 +7,9 @@
 
     <fragment
         android:id="@+id/main"
-        android:name="com.ekenya.rnd.android.onboarding.presentation.main.onboarding.OnboardingFragment"
-        tools:layout="@layout/onboarding_main_fragment">
+        android:name="com.example.mindfullnessapp.Onboarding.OnboardingFragment"
+        tools:layout="@layout/fragment_on_boarding">
 
-        <action
-            android:id="@+id/action_onboardingFragment_to_welcomeFragment"
-            app:destination="@id/welcomeFragment"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
 
-    </fragment>
-    <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="com.ekenya.rnd.android.onboarding.presentation.main.WelcomeFragment"
-        android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" >
     </fragment>
 </navigation>
