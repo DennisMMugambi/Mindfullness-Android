@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fitsSystemWindows="true"
+            >
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:theme="@style/Theme.MyFancyTheme"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/custom_toolbar"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    app:layout_collapseMode="pin"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/white"
+                    android:theme="@style/Theme.MyFancyTheme"
+                    android:layout_height="?attr/actionBarSize"
+                    >
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/appGray"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/parent"
+                android:layout_marginTop="@dimen/_60dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/page_title"
+                    android:layout_width="@dimen/_300dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_otp"
+                    android:theme="@style/page_title"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/_5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_one"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:background="@drawable/rounded_tv"
+                    android:layout_marginStart="@dimen/_40dp"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_two"
+                    app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+
+                <TextView
+                    android:id="@+id/tv_two"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:background="@drawable/rounded_tv"
+                    app:layout_constraintStart_toEndOf="@+id/tv_one"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_three"
+                    app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+
+                <TextView
+                    android:id="@+id/tv_three"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:background="@drawable/rounded_tv"
+                    app:layout_constraintStart_toEndOf="@+id/tv_two"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_four"
+                    app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+
+                <TextView
+                    android:id="@+id/tv_four"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:background="@drawable/rounded_tv"
+                    app:layout_constraintStart_toEndOf="@+id/tv_three"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_five"
+                    app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+
+                <TextView
+                    android:id="@+id/tv_five"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:background="@drawable/rounded_tv"
+                    app:layout_constraintStart_toEndOf="@+id/tv_four"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_six"
+                    app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+
+                <TextView
+                    android:id="@+id/tv_six"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:layout_marginEnd="@dimen/_40dp"
+                    android:background="@drawable/rounded_tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_five"
+                    app:layout_constraintTop_toBottomOf="@+id/page_title"/>
+
+                <TextView
+                    android:id="@+id/received_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    tools:text="@string/didnt_receive_code"
+                    android:fontFamily="@font/proximabold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_six"
+                    app:layout_constraintStart_toStartOf="@+id/tv_one"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_four"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnResendOTP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_38dp"
+                    android:enabled="false"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/_60dp"
+                    android:layout_marginEnd="@dimen/_14dp"
+                    android:layout_marginStart="@dimen/_14dp"
+                    android:background="@drawable/btn_blue"
+                    android:text="@string/resend_otp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_14sp"
+                    android:theme="@style/Button2Theme"
+                    android:bottomRightRadius="5dp"
+                    android:bottomLeftRadius="5dp"
+                    android:topLeftRadius="5dp"
+                    android:topRightRadius="5dp"
+                    app:backgroundTint="@color/appBlue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/received_otp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</layout>

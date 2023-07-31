@@ -156,4 +156,9 @@
     <string name="name">Enter your username</string>
     <string name="name_mobile">Enter your mobile number</string>
     <string name="create_account">Create a new account</string>
+    <string name="enter_otp">Enter the otp sent to your phone number</string>
+    <string name="didnt_receive_code">Didn\'t receive code?</string>
+    <string name="resend_otp">Resend</string>
+    <string name="number_invalid">Kindly enter a valid phone number in the format 07xx</string>
+    <string name="didnt_receive_otp">Didn\'t receive otp message?</string>
 </resources>

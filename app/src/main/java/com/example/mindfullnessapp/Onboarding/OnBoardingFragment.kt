@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager.widget.ViewPager
 import com.ekenya.rnd.android.common.Utils.AutoSlideAdvertisement
 import com.example.mindfullnessapp.Adapters.OnBoardingAdapter
@@ -118,6 +119,7 @@ class OnboardingFragment : Fragment() {
             if (isLastScreen) {
                 binding.loading.visibility = View.VISIBLE
                // showAuthModule()
+                findNavController().navigate(R.id.action_onboardingFragment_to_loginFragment)
             }
         }
 

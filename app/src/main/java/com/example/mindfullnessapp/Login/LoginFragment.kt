@@ -13,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.ekenya.rnd.android.common.Utils.Dialogs
 import com.ekenya.rnd.android.common.Utils.Enums.IsSearching
 import com.ekenya.rnd.android.common.Utils.Enums.Status
@@ -76,7 +77,7 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.signUp.setOnClickListener {
-            //findNavController().navigate(R.id.action_userLoginFragment_to_createAccountFragment)
+            findNavController().navigate(R.id.action_loginFragment_to_singUpFragment)
         }
 
 
@@ -125,6 +126,7 @@ class LoginFragment : Fragment() {
                 //open home module
                 //showHomeModule()
                 //Navigate to home
+                findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
             } else {
                 Snackbar.make(binding.root, it.exception.toString(), Snackbar.LENGTH_LONG).show()
             }
