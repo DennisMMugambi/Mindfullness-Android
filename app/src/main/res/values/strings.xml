@@ -161,4 +161,12 @@
     <string name="resend_otp">Resend</string>
     <string name="number_invalid">Kindly enter a valid phone number in the format 07xx</string>
     <string name="didnt_receive_otp">Didn\'t receive otp message?</string>
+    <string name="mood_today">How are you feeling today?</string>
+    <string name="sample_date">Today 09/08/23, 12:28</string>
+    <string name="great">Great</string>
+    <string name="awful">Awful</string>
+    <string name="sad">Sad</string>
+    <string name="good">Good</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="note_here">Write your note here</string>
 </resources>

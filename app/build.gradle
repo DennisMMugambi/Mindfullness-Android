@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("dagger.hilt.android.plugin")
-    id('com.google.gms.google-services')
+    id("com.google.gms.google-services")
     id("kotlin-kapt")
     id("kotlin-parcelize")
 }
@@ -73,6 +73,11 @@ dependencies {
     //firebase
     implementation('com.google.firebase:firebase-auth:21.0.3')
     implementation('com.google.android.gms:play-services-auth:20.4.1')
+
+    // Import the Firebase BoM
+    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
+    implementation("com.google.firebase:firebase-analytics-ktx")
+
 
     //Lottie
     implementation("com.airbnb.android:lottie:3.4.0")

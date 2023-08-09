@@ -1,4 +1,4 @@
-package com.example.mindfullnessapp.Home
+package com.example.mindfullnessapp.Personalization
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,12 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mindfullnessapp.R
-import com.example.mindfullnessapp.databinding.FragmentHomeBinding
+import com.example.mindfullnessapp.databinding.FragmentPersonalizationBinding
 
+class PersonalizationFragment : Fragment() {
 
-class HomeFragment : Fragment(R.layout.fragment_home) {
+    private lateinit var binding : FragmentPersonalizationBinding
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-    private lateinit var binding : FragmentHomeBinding
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -19,9 +22,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     ): View? {
         // Inflate the layout for this fragment
 
-        binding = FragmentHomeBinding.inflate(inflater)
+        binding = FragmentPersonalizationBinding.inflate(inflater)
         return binding.root
     }
-
 
 }

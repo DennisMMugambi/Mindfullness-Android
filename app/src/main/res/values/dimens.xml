@@ -71,4 +71,6 @@
     <dimen name="_9dp">9dp</dimen>
     <dimen name="_157dp">157dp</dimen>
     <dimen name="_130dp">130dp</dimen>
+    <dimen name="_28sp">28sp</dimen>
+    <dimen name="_150dp">150dp</dimen>
 </resources>
