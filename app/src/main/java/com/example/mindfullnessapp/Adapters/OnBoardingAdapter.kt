@@ -15,8 +15,8 @@ class OnBoardingAdapter(var context: Context): PagerAdapter() {
 
     private val splashscreenDescriptions = arrayOfNulls<String>(3)
     private val splashscreenimages = intArrayOf(
-        R.drawable.therapist, R.drawable.chatbotconvo,
-        R.drawable.meditate
+        R.drawable.consultation, R.drawable.chabot,
+        R.drawable.meditation
     )
     init {
         layoutInflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater

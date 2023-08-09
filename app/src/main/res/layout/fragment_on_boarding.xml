@@ -74,7 +74,7 @@
                 />
 
             <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabDots"
+                android:id="@+id/tDots"
                 android:layout_width="@dimen/_70dp"
                 android:layout_height="@dimen/_30dp"
                 android:backgroundTintMode="screen"

@@ -11,7 +11,6 @@ import com.example.mindfullnessapp.R
 import com.example.mindfullnessapp.databinding.AppCustomDialogBinding
 import com.example.mindfullnessapp.databinding.LoadingAnimationDialogBinding
 
-
 class Dialogs {
 
     var listener: (()->Unit)? = null

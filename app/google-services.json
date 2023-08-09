@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "507322384872",
+    "project_id": "mindfullness-app-f18ba",
+    "storage_bucket": "mindfullness-app-f18ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507322384872:android:fbb7a049d95c6db14fa45d",
+        "android_client_info": {
+          "package_name": "com.example.mindfullnessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507322384872-pjg7c18cgicv8pu5p7kqapciig2v62k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mindfullnessapp",
+            "certificate_hash": "5655b58f9dfd5ba6f370d7e8dbff03ad8548434d"
+          }
+        },
+        {
+          "client_id": "507322384872-kr2e7iuqp4r067n5q8jp1h04vhbbreq3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA_3G7eF6D806E5UFT9BP8_Y8CE9K146U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507322384872-kr2e7iuqp4r067n5q8jp1h04vhbbreq3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

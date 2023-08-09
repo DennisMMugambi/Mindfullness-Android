@@ -59,7 +59,7 @@ class OnboardingFragment : Fragment() {
                 requireContext()
             )
         binding.pager.adapter =onBoardingAdapter
-        binding.tabDots.setupWithViewPager(binding.pager, true)
+        binding.tDots.setupWithViewPager(binding.pager, true)
         onBoardingAdapter.notifyDataSetChanged()
 
         binding.tvSliderTitle.setText(R.string.onboarding_title_one)

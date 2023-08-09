@@ -10,12 +10,12 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
-import com.example.mindfullnessapp.R
 import com.example.mindfullnessapp.databinding.FragmentOtpVerificationBinding
 import com.google.firebase.FirebaseException
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
 import java.util.concurrent.TimeUnit
+import com.example.mindfullnessapp.R
 
 
 class OtpVerificationFragment : Fragment() {

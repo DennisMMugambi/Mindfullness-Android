@@ -8,6 +8,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import com.ekenya.rnd.android.common.Utils.Dialogs
+import com.example.mindfullnessapp.R
 import com.example.mindfullnessapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
