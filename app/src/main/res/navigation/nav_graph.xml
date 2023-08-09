@@ -42,6 +42,14 @@
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
 
+        <action
+            android:id="@+id/action_loginFragment_to_personalizationFragment"
+            app:destination="@id/personalizationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
 
     </fragment>
 
@@ -87,6 +95,13 @@
         android:id="@+id/homeFragment"
         android:name="com.example.mindfullnessapp.Home.HomeFragment"
         tools:layout="@layout/fragment_home">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/personalizationFragment"
+        android:name="com.example.mindfullnessapp.Personalization.PersonalizationFragment"
+        tools:layout="@layout/fragment_personalization">
 
     </fragment>
 </navigation>

@@ -80,6 +80,9 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_loginFragment_to_singUpFragment)
         }
 
+        binding.btnLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_personalizationFragment)
+        }
 
         initListeners()
         showErrorMessage()

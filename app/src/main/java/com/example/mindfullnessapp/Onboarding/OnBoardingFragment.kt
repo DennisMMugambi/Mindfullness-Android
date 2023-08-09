@@ -103,8 +103,8 @@ class OnboardingFragment : Fragment() {
         })
 
         scrollToNext()
-        val autoPlay = AutoSlideAdvertisement()
-        autoPlay.autoPlayAdvertisement(binding.pager)
+        //val autoPlay = AutoSlideAdvertisement()
+       // autoPlay.autoPlayAdvertisement(binding.pager)
 
     }
 
