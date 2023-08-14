@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.mindfullnessapp.R
 import com.example.mindfullnessapp.databinding.FragmentHomeBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private lateinit var binding : FragmentHomeBinding
