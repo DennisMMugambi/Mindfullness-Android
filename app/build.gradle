@@ -80,7 +80,7 @@ dependencies {
 
 
     //Lottie
-    implementation("com.airbnb.android:lottie:3.4.0")
+    implementation("com.airbnb.android:lottie:3.5.0")
 
     // Room
     implementation("androidx.room:room-runtime:2.2.5")

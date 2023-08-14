@@ -169,4 +169,17 @@
     <string name="good">Good</string>
     <string name="add_notes">Add Notes</string>
     <string name="note_here">Write your note here</string>
+    <string name="anxiety">Anxiety</string>
+    <string name="stress">Stress</string>
+    <string name="traumatic_memories">Traumatic Memories</string>
+    <string name="Stress">Stress</string>
+    <string name="Anxiety">Anxiety</string>
+    <string name="fear">Fear</string>
+    <string name="overthinking">Overthinking</string>
+    <string name="worried">Worried</string>
+    <string name="none">None</string>
+    <string name="depression">Depression</string>
+    <string name="save">Save</string>
+    <string name="what_problems">What are you currently going through?\n</string>
+    <string name="personalizing">Personalizing your experience</string>
 </resources>

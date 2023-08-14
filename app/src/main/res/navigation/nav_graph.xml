@@ -103,5 +103,35 @@
         android:name="com.example.mindfullnessapp.Personalization.PersonalizationFragment"
         tools:layout="@layout/fragment_personalization">
 
+        <action
+            android:id="@+id/action_personalizationFragment_to_problemsFragment"
+            app:destination="@id/problemsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/problemsFragment"
+        android:name="com.example.mindfullnessapp.Personalization.CurrentProblemsFragment"
+        tools:layout="@layout/fragment_current_problems">
+
+        <action
+            android:id="@+id/action_problemsFragment_to_configuringFragment"
+            app:destination="@id/configuringFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/configuringFragment"
+        android:name="com.example.mindfullnessapp.Personalization.ConfiguringFragment"
+        tools:layout="@layout/fragment_configuring">
+
     </fragment>
 </navigation>

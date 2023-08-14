@@ -23,18 +23,19 @@
     </style>
 
     <style name="Button2Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
-    <item name="colorPrimary">@color/appBlue</item>
-    <item name="colorPrimaryDark">@color/appBlue</item>
+        <item name="colorPrimary">@color/appBlue</item>
+        <item name="colorPrimaryDark">@color/appBlue</item>
         <item name="cornerFamily">rounded</item>
         <item name="cornerSizeTopLeft">12dp</item>
         <item name="cornerSizeBottomLeft">12dp</item>
         <item name="cornerSizeTopRight">12dp</item>
         <item name="cornerSizeBottomRight">12dp</item>
         <item name="background">@drawable/bg_btn_onboarding</item>
-    <item name="colorAccent">@color/white</item>
-    <item name="fontFamily">@font/poppinsbold</item>
-</style>
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/poppinsbold</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
     <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
         <item name="boxStrokeColor">@color/appBlue</item>
