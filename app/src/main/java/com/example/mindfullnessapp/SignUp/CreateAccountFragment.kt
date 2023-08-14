@@ -124,7 +124,7 @@ class CreateAccountFragment : Fragment() {
         auth.signInWithCredential(credential).addOnCompleteListener {
             if(it.isSuccessful) {
                 //open home module
-                findNavController().navigate(R.id.action_signUpFragment_to_homeFragment)
+              //  findNavController().navigate(R.id.action_signUpFragment_to_homeFragment)
             } else {
                 Snackbar.make(binding.root, it.exception.toString(), Snackbar.LENGTH_LONG).show()
             }

@@ -182,4 +182,9 @@
     <string name="save">Save</string>
     <string name="what_problems">What are you currently going through?\n</string>
     <string name="personalizing">Personalizing your experience</string>
+    <string name="home">home</string>
+    <string name="consult">consult</string>
+    <string name="chat">chat</string>
+    <string name="profile">profile</string>
+    <string name="meditation">meditation</string>
 </resources>
