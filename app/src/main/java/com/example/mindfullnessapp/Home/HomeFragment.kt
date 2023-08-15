@@ -41,12 +41,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     private fun initViews() {
 
         val meditationItemList = listOf(
-            MeditationItem("Morning Meditation", R.drawable.feeling_awful),
-            MeditationItem("Nature Sounds", R.drawable.feeling_awful),
-            MeditationItem("Guided Meditation", R.drawable.feeling_awful),
-            MeditationItem("Morning Meditation", R.drawable.feeling_awful),
-            MeditationItem("Nature Sounds", R.drawable.feeling_awful),
-            MeditationItem("Guided Meditation", R.drawable.feeling_awful),
+            MeditationItem("Morning Meditation", R.drawable.meditation5),
+            MeditationItem("Nature Sounds", R.drawable.meditation6),
+            MeditationItem("Guided Meditation", R.drawable.meditation3),
+            MeditationItem("Morning Meditation", R.drawable.meditation4),
+            MeditationItem("Nature Sounds", R.drawable.meditation7),
+            MeditationItem("Guided Meditation", R.drawable.meditation5),
             // Add more items as needed
         )
 
@@ -64,7 +64,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         // Suppose you have a list of items with different types
        val therapistList: List<TherapistItem> = listOf(
             TherapistItem(
-                image = R.drawable.feeling_awful,
+                image = R.drawable.doctor,
                 name = "Dr. Panoor Doe",
                 rating = "4.8",
                 education = "PhD in Psychology",
@@ -74,7 +74,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 availability = "9AM to 1AM"
             ),
             TherapistItem(
-                image = R.drawable.feeling_awful,
+                image = R.drawable.doctor,
                 name = "Dr Janic Doe",
                 rating = "4.1",
                 education = "MA in Counseling",
@@ -84,7 +84,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 availability = "2PM to 5PM"
             ),
            TherapistItem(
-               image = R.drawable.feeling_awful,
+               image = R.drawable.doctor,
                name = "Dr Kevin Doe",
                rating = "4.7",
                education = "MA in Psychiatry",
