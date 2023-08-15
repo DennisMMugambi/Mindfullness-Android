@@ -40,14 +40,14 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationView.menu.getItem(2).isEnabled = false
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            android.R.id.home -> {
-                // Handle the Up button click (navigate up or back)
-                onBackPressed()
-                return true
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        when (item.itemId) {
+//            android.R.id.home -> {
+//                // Handle the Up button click (navigate up or back)
+//                onBackPressed()
+//                return true
+//            }
+//        }
+//        return super.onOptionsItemSelected(item)
+//    }
 }

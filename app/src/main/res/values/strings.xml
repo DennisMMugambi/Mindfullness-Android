@@ -187,4 +187,9 @@
     <string name="chat">chat</string>
     <string name="profile">profile</string>
     <string name="meditation">meditation</string>
+    <string name="welcome_back_user">Welcome back User\n</string>
+    <string name="hello_user">Hello User\n</string>
+    <string name="meditation_list">Meditation for you</string>
+    <string name="view_all"><u>View All</u></string>
+    <string name="mindfullness_meditation">Mindfullness\nMeditation</string>
 </resources>
