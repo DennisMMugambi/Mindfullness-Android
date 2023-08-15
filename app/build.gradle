@@ -99,6 +99,9 @@ dependencies {
     //firebase
     implementation('com.google.firebase:firebase-core:9.6.1')
 
+    //circle image view
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
 
 
 }

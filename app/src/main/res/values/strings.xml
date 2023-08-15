@@ -192,4 +192,14 @@
     <string name="meditation_list">Meditation for you</string>
     <string name="view_all"><u>View All</u></string>
     <string name="mindfullness_meditation">Mindfullness\nMeditation</string>
+    <string name="Consult">Consult</string>
+    <string name="doctor_sample_name">Dr Poornima Doe</string>
+    <string name="sample_rating">4.6</string>
+    <string name="doctor_sample_education">M.B B.S DNB Psychiatry</string>
+    <string name="doctor_sample_experience">12+ years of experience</string>
+    <string name="doctor_sample_price">KSHS 5000</string>
+    <string name="doctor_sample_price_old"><s>KSHS 6500</s></string>
+    <string name="doctor_availabilty">Availability</string>
+    <string name="doctor_availabilty_time">9AM to 1PM</string>
+    <string name="book">book now\n</string>
 </resources>
