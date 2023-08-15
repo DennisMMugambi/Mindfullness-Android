@@ -78,4 +78,7 @@
     <dimen name="_25sp">25sp</dimen>
     <dimen name="_250dp">250dp</dimen>
     <dimen name="_4dp">4dp</dimen>
+    <dimen name="_175dp">175dp</dimen>
+    <dimen name="_13sp">13sp</dimen>
+    <dimen name="_90dp">90dp</dimen>
 </resources>

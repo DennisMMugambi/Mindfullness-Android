@@ -202,4 +202,8 @@
     <string name="doctor_availabilty">Availability</string>
     <string name="doctor_availabilty_time">9AM to 1PM</string>
     <string name="book">book now\n</string>
+    <string name="mood_tracker">Mood Tracker</string>
+    <string name="feeling_anxious">Feeling Anxious?</string>
+    <string name="ai_intro">Hello, I am Bella your AI Friend, Talk\nto me now</string>
+    <string name="unlock_premium">Unlock Premium</string>
 </resources>
